@@ -1,38 +1,27 @@
 {
-  "title": "Background script with explicit reference to host01",
-  "difficulty": "beginner",
-  "time": "10 minutes",
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "wait-script.sh",
-          "target": "/tmp/"
+    "noindex": true,
+    "title": "Interactive Quiz",
+    "description": "Verify understanding and key points by using an interactive quiz",
+    "details": {
+        "steps": [
+            {
+                "title": "Quiz",
+                "text": "step1.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "credits": ""
         },
-        {
-          "file": "dummy.json",
-          "target": "/root"
+        "finish": {
+            "text": "finish.md"
         }
-      ]
     },
-    "steps": [
-      {
-        "title": "Commands",
-        "text": "step1.md"
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "code": "set-env.sh",
-      "courseData": "init-env.sh"
+    "files": [],
+    "environment": {
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu"
     }
-  },
-  "environment": {
-    "uilayout": "terminal",
-    "hidefinish": true,
-    "hideintro": true
-  },
-  "backend": {
-    "imageid": "kubernetes-cluster-running:1.18"
-  }
 }
